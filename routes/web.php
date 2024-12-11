@@ -2,8 +2,8 @@
 
 use App\Http\Controllers\main_prauts_hafidzibnu;
 use App\Http\Controllers\main_pwl;
-use App\Http\Controllers\prauts_1;
 use App\Http\Controllers\UTS_hafidzController;
+use App\Http\Controllers\StokController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 
@@ -87,4 +87,6 @@ Route::post('logika2', [main_pwl::class, 'logika2']);
 
 Route::post('prauts_hafidzibnu', [main_prauts_hafidzibnu::class, 'transaksi']);
 
-Route::post("UTS_Hafidz", [UTS_hafidzController::class, 'pesanTiket']);
+Route::post('UTS_Hafidz', [UTS_hafidzController::class, 'pesanTiket']);
+
+Route::post('tambah_stok', [StokController::class, 'tambah']);

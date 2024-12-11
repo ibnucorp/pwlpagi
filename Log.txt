@@ -1,0 +1,7 @@
+ php artisan migrate:refresh
+ => menghapus tabel yang sudah dibuat dan membuat ulang tabel*
+ *penting   1. Buat database dulu
+            2. Baru Migrate
+
+php artisan make:migration [Nama_Tabel]
+=> Membuat command php untuk membuat tabel di database

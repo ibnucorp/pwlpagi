@@ -17,4 +17,11 @@ class StokController extends Controller
             'created_at'    => now(),
         ]);
     }
+
+    public function show()
+    {
+        // SELECT * FROM nama_table
+        $data = DB::table('stok')->get();
+        return view('tables')->with('data', $data);
+    }
 }

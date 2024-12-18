@@ -5,3 +5,14 @@
 
 php artisan make:migration [Nama_Tabel]
 => Membuat command php untuk membuat tabel di database
+
+18 Dec 2024
+Install Breeze
+breeze adalah modul autentikasi dengan tailwindcss
+
+breeze akan menghapus routes.
+
+>>>
+composer require laravel/breeze
+php artisan breeze:install blade
+>>>

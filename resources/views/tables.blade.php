@@ -268,21 +268,32 @@
                 <table class="table align-items-center mb-0">
                   <thead>
                     <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Author</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Function</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">ID Barang</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Nama Barang</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Harga Barang
                       </th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                        Employed</th>
+                        Stok Barang</th>
                       <th class="text-secondary opacity-7"></th>
                     </tr>
                   </thead>
                   <tbody>
+                    @foreach ( $datas as $data )
                     <tr>
                       <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">ASD</span>
+                        <span class="text-secondary text-xs font-weight-bold">{{ $data->id_stok }}</span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">{{ $data->nama_barang }}</span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">{{ $data->harga_barang }}</span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">{{ $data->stok_barang }}</span>
                       </td>
                     </tr>
+                    @endforeach
                   </tbody>
                 </table>
               </div>

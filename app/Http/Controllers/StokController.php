@@ -21,7 +21,7 @@ class StokController extends Controller
     public function show()
     {
         // SELECT * FROM nama_table
-        $data = DB::table('stok')->get();
-        return view('tables')->with('data', $data);
+        $datas = DB::table('stok')->get();
+        return view('tables')->with('datas', $datas);
     }
 }

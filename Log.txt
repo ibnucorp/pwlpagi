@@ -16,3 +16,8 @@ breeze akan menghapus routes.
 composer require laravel/breeze
 php artisan breeze:install blade
 >>>
+
+[   Akun   ]
+Nama    : ibnu
+Email   : ibnu@gmail.com
+Pass    : 12345678
